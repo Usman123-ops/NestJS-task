@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Box with Center Yellow Box</title>
+  <style>
+    .container {
+      width: 500px;          /* Red box ka size */
+      height: 500px;
+      background-color: red;
+      display: flex;          /* Centering ke liye flex use */
+      align-items: center;    /* Vertical center */
+      justify-content: center;/* Horizontal center */
+      margin: 50px auto;      /* Page ke center mein box */
+    }
+
+    .yellow-box {
+      width: 150px;           /* Yellow box ka size */
+      height: 150px;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="yellow-box"></div>
+  </div>
+</body>
+</html>

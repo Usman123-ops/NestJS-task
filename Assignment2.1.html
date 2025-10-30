@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Box with Yellow Square</title>
+  <style>
+    .container {
+      width: 500px;      /* apni marzi ka size rakh sakte ho */
+      height: 500px;
+      background-color: red;
+      position: relative; /* child element ko position karne ke liye */
+    }
+
+    .small-box {
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+      position: absolute;
+      bottom: 20px;  /* neeche se distance */
+      right: 20px;   /* right se distance */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="small-box"></div>
+  </div>
+</body>
+</html>

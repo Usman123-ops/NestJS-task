@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Top Section */
+    .top-section {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+    }
+
+    .top-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Black Bar */
+    .black-bar {
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 15px 10px;
+    }
+
+    .black-bar h1 {
+      color: #fff;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.4;
+    }
+
+    @media(max-width:768px){
+      .black-bar h1 {
+        font-size: 18px;
+      }
+    }
+
+    /* Container Layout */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+      gap: 20px;
+    }
+
+    /* Left Section */
+    .left {
+      width: 60%;
+    }
+
+    .left h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .left ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .left ul li {
+      margin: 6px 0;
+    }
+
+    .highlight {
+      color: red;
+      font-weight: bold;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    /* Right Section */
+    .right {
+      width: 35%;
+      text-align: center;
+    }
+
+    .right h3 {
+      color: #6a0dad;
+      margin-bottom: 8px;
+    }
+
+    .right h4 {
+      margin: 8px 0;
+      font-size: 18px;
+    }
+
+    .right a {
+      display: block;
+      color: #0066cc;
+      margin: 5px 0;
+      text-decoration: none;
+    }
+
+    .right img {
+      width: 100%;
+      margin: 12px 0;
+      border-radius: 6px;
+    }
+
+   
+
+    /* Important Dates */
+    .dates {
+      margin-top: 25px;
+    }
+
+    .dates h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .dates table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .dates table th,
+    .dates table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .dates table th {
+      background: #f4f4f4;
+    }
+
+    .red {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* ====== Footer Style ====== */
+.footer {
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* Sponsors Heading (Top Bar) */
+.footer-top {
+  background: #333; /* dark gray */
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Logos Row */
+.sponsors-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* space between logos */
+  flex-wrap: wrap; /* responsive */
+  padding: 15px 20px;
+  background: #fff; /* white background for logos */
+}
+
+.sponsors-logos img {
+  height: 70px;   /* logo size fix */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.sponsors-logos img:hover {
+  transform: scale(1.1); /* hover effect */
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  background: #333; 
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 15px;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Top Section -->
+  <div class="top-section">
+    <img src="Superioruni.jpg" alt="Conference Banner">
+    <div class="black-bar">
+      <h1>International Conference on Advancements<br>in Computational Sciences</h1>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left">
+      <h2>Welcome</h2>
+      <p>
+        International Conference on Advancements in Computational Sciences (ICACS’18) aims to
+        provide an international forum for presenting the advances and newly emerging trends in
+        computer science. The goal of ICACS’18 is to bring together renowned scientists and leading
+        researchers from academia and industry in one platform with the focus of exchanging ideas
+        on modern computing innovations and applications across various fields such as health-care,
+        business, industry, etc. and to establish new collaborations in relevant areas in order to
+        produce standardized quality research result. ICACS’18 will hold six major tracks including
+      </p>
+      <ul>
+        <li>Artificial Intelligence</li>
+        <li>Data Sciences & Knowledge Systems</li>
+        <li>Human Computer Interaction (HCI)</li>
+        <li>Multimedia and Graphics</li>
+        <li>Networks & Communication Technologies</li>
+        <li>Software Engineering</li>
+      </ul>
+
+      <p class="highlight">
+        Selected Papers will be published in International Journal of Information Technology and
+        Web Engineering (IJITWE) <a href="#">About this Journal</a>
+      </p>
+
+      <!-- Important Dates (moved here) -->
+      <div class="dates">
+        <h3>Important Dates:</h3>
+        <table>
+          <tr>
+            <td class="red">Paper Submission Deadline (extended)</td>
+            <td class="red">15th September 2017</td>
+          </tr>
+          <tr>
+            <td>Acceptance Notification</td>
+            <td>30th November 2017</td>
+          </tr>
+          <tr>
+            <td>Camera Ready Submission</td>
+            <td>15th December 2017</td>
+          </tr>
+          <tr>
+            <td>Early Bird Registration</td>
+            <td>15th December 2017</td>
+          </tr>
+          <tr>
+            <td>Late Registration</td>
+            <td>1st January 2018</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+      <h3>Extended Paper Submission Date</h3>
+      <h4>15th September 2017</h4>
+
+      <h4>Venue: Lahore, Pakistan</h4>
+      <a href="#">Accepted Articles</a>
+      <a href="#">Conference Program</a>
+
+      <img src="LahoreCity.jpg" alt="Lahore City">
+      <img src="MinarePakistan.jpg" alt="Minar-e-Pakistan">
+    </div>
+  </div>
+        
+  <!-- ====== Footer Section ====== -->
+<footer class="footer">
+  <!-- Sponsors Heading -->
+  <div class="footer-top">
+    <p>Sponsors</p>
+  </div><br>
+
+  <!-- Logos -->
+  <div class="sponsors-logos">
+    <img src="Superiorlogo.jpg" alt="Sponsor 1">
+    <img src="PHEClogo.jpg" alt="Sponsor 2">
+    <img src="IEElogo.jpg" alt="Sponsor 3">
+    <img src="HEClogo.jpg" alt="Sponsor 4">
+    <img src="IEE2logo.jpg" alt="Sponsor 5">
+    <img src="HBLlogo.jpg" alt="Sponsor 6">
+    <img src="ONElogo.jpg" alt="Sponsor 7">
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>International Conference on Advancements in Computational Science</p>
+  </div>
+</footer>
+
+  
+
+</body>
+</html>
