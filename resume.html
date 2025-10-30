@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV — Muhammad Usman</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #f5f7fb; font-family: "Segoe UI", Roboto, Arial; color:#222; }
+
+    .page {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .cv {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 28px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(20,30,60,0.08);
+      overflow: hidden;
+    }
+
+    /* LEFT */
+    .left {
+      background: #f9fbfe;
+      padding: 28px;
+      border-right: 1px solid rgba(0,0,0,0.06);
+      text-align:center;
+    }
+
+    .photo {
+      width:130px; height:130px;
+      border-radius:50%;
+      overflow:hidden;
+      margin:0 auto 16px;
+      border:4px solid #0b74da;
+    }
+    .photo img {
+      width:100%; height:100%; object-fit:cover;
+    }
+
+    .name { font-size:20px; font-weight:700; margin-bottom:4px; }
+    .title { color:#555; font-size:13px; margin-bottom:20px; }
+
+    .section-title {
+      font-size:14px; color:#0b74da; font-weight:700;
+      margin:20px 0 10px; text-align:left;
+    }
+
+    .contact-list, .skills, .languages, .education { font-size:13px; text-align:left; line-height:1.6; }
+    .contact-list div { display:flex; gap:8px; align-items:center; margin-bottom:6px; }
+
+    .skills .skill { margin-bottom:12px; }
+    .bar { height:8px; background:#e9eef8; border-radius:999px; margin-top:6px; }
+    .level { height:8px; border-radius:999px; background: linear-gradient(90deg,#0b74da,#00b4ff); width:80%; }
+
+    .languages div { margin-bottom:6px; }
+    .education ul { list-style:none; }
+    .education li { margin-bottom:12px; }
+
+    /* RIGHT */
+    .right { padding:28px; }
+    .header { margin-bottom:12px; }
+    .main-title { font-size:24px; font-weight:800; }
+    .location { color:#666; font-size:13px; margin-top:4px; }
+
+    .summary, .experience, .projects, .certifications, .achievements {
+      margin-top:20px;
+    }
+    .summary p { font-size:14px; line-height:1.6; }
+
+    h2 { font-size:16px; color:#0b74da; margin-bottom:10px; }
+
+    .job { margin-bottom:16px; }
+    .job-top { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
+    .job h3 { font-size:15px; }
+    .company { color:#555; font-size:13px; }
+    .period { font-size:12px; color:#777; white-space:nowrap; }
+    .job p { margin-top:6px; font-size:14px; line-height:1.6; }
+
+    ul { list-style:disc inside; }
+    ul li { margin-bottom:6px; font-size:14px; }
+
+    /* Responsive */
+    @media(max-width:820px){
+      .cv { grid-template-columns:1fr; }
+      .left { border-right:none; border-bottom:1px solid rgba(0,0,0,0.06); }
+    }
+
+    /* Print */
+    @media print {
+      body { background:white; }
+      .page { margin:0; padding:0; }
+      .cv { box-shadow:none; border-radius:0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="cv">
+      <!-- LEFT -->
+      <aside class="left">
+        <div class="photo">
+          <img src="" alt="Profile Photo">
+        </div>
+        <div class="name">Muhammad Usman</div>
+        <div class="title">BS Software Engineering Student</div>
+
+        <div class="section-title">Contact</div>
+        <div class="contact-list">
+          <div>📧 youremail@example.com</div>
+          <div>📞 +92-300-1234567</div>
+          <div>🌐 linkedin.com/in/yourname</div>
+          <div>💻 github.com/yourname</div>
+        </div>
+
+        <div class="section-title">Skills</div>
+        <div class="skills">
+          <div class="skill">HTML & CSS <div class="bar"><div class="level" style="width:95%"></div></div></div>
+          <div class="skill">JavaScript <div class="bar"><div class="level" style="width:75%"></div></div></div>
+          <div class="skill">SQL & Databases <div class="bar"><div class="level" style="width:80%"></div></div></div>
+          <div class="skill">Python / Java <div class="bar"><div class="level" style="width:70%"></div></div></div>
+        </div>
+
+        <div class="section-title">Languages</div>
+        <div class="languages">
+          <div>Urdu — Native</div>
+          <div>English — Fluent</div>
+        </div>
+
+        <div class="section-title">Education</div>
+        <div class="education">
+          <ul>
+            <li><strong>BS Software Engineering</strong><br><small>Superior University, Lahore — 2022–2026</small></li>
+            <li><strong>FSC Pre-Engineering</strong><br><small>2020–2022</small></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- RIGHT -->
+      <main class="right">
+        <div class="header">
+          <div class="main-title">Muhammad Usman</div>
+          <div class="location">Lahore, Pakistan</div>
+        </div>
+
+        <section class="summary">
+          <h2>Profile</h2>
+          <p>Motivated BS Software Engineering student with practical experience in front-end development, database design, and small team projects. Strong problem solver, quick learner, and enthusiastic about building impactful software solutions.</p>
+        </section>
+
+        <section class="experience">
+          <h2>Experience</h2>
+          <div class="job">
+            <div class="job-top">
+              <div>
+                <h3>Software Development Intern</h3>
+                <div class="company">ABC Technologies — Frontend & API tasks</div>
+              </div>
+              <div class="period">Jun 2024 – Aug 2024</div>
+            </div>
+            <p>Contributed to responsive UI design, fixed layout bugs, optimized SQL queries for dashboards, and collaborated with senior developers.</p>
+          </div>
+
+          <div class="job">
+            <div class="job-top">
+              <div>
+                <h3>Freelance Web Developer</h3>
+                <div class="company">Multiple Clients — Freelance</div>
+              </div>
+              <div class="period">2023 – Present</div>
+            </div>
+            <p>Developed responsive websites using HTML/CSS/JS, implemented contact forms, CMS features, and SEO improvements.</p>
+          </div>
+        </section>
+
+        <section class="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li><strong>Food Expiry App</strong> — Barcode inventory, expiry tracking, auto-discount near expiry.</li>
+            <li><strong>Blood Bank Management System (SQL)</strong> — Full DB schema, queries, and donation tracking system.</li>
+          </ul>
+        </section>
+
+        <section class="certifications">
+          <h2>Certifications</h2>
+          <ul>
+            <li>Database Management Fundamentals — (Coursera/LinkedIn Learning Example)</li>
+            <li>Frontend Development with React — (Udemy Example)</li>
+          </ul>
+        </section>
+
+        <section class="achievements">
+          <h2>Achievements</h2>
+          <ul>
+            <li>Dean’s List — Semester 1</li>
+            <li>1st Place — University Hackathon 2024</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
